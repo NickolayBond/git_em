@@ -16,8 +16,7 @@ for (let key in obj) {
     const type = obj[key] === null ? "null" : typeof obj[key];
 
     if (!result[type]) result[type] = 1;
-
-    result[type]++;
+    else result[type]++;
 }
 
 console.log(result); // {null: 1, object: 1, string: 1, number: 2}
